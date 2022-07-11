@@ -1,5 +1,7 @@
 import MessageButton from '../messageButton'
 import './styles.css'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Card() {
     return (
@@ -7,10 +9,20 @@ function Card() {
             <h2 className="proj-sales-title">Vendas por Fornecedor</h2>
             <div>
                 <div className="proj-form-container">
-                    <input className="proj-form-date" type="text"/>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="proj-form-date"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
                 <div className="proj-form-container">
-                    <input className="proj-form-date" type="text"/>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="proj-form-date"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
 
                 <div>
@@ -60,7 +72,7 @@ function Card() {
                                 </td>
                                 <td>
                                     <div className="proj-red-btn-container">
-                                        <MessageButton/>
+                                        <MessageButton />
                                     </div>
                                 </td>
                             </tr>
