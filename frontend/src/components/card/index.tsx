@@ -2,24 +2,30 @@ import MessageButton from '../messageButton'
 import './styles.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useState } from 'react';
 
 function Card() {
+
+    const [minDate, setMinDate] = useState(new Date(new Date().setDate(new Date().getDate() - 365)));
+    const [maxDate, setMaxDate] = useState(new Date());
+
+
     return (
         <div className="proj-card">
             <h2 className="proj-sales-title">Vendas por Fornecedor</h2>
             <div>
                 <div className="proj-form-container">
                     <DatePicker
-                        selected={new Date()}
-                        onChange={(date: Date) => { }}
+                        selected={minDate}
+                        onChange={(date: Date) => setMinDate(date)}
                         className="proj-form-date"
                         dateFormat="dd/MM/yyyy"
                     />
                 </div>
                 <div className="proj-form-container">
                     <DatePicker
-                        selected={new Date()}
-                        onChange={(date: Date) => { }}
+                        selected={maxDate}
+                        onChange={(date: Date) => setMaxDate(date)}
                         className="proj-form-date"
                         dateFormat="dd/MM/yyyy"
                     />
