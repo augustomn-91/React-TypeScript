@@ -1,0 +1,96 @@
+.proj-card {
+    background-color: #283142;
+    border-radius: 12px;
+    padding: 30px 10px;
+}
+
+.proj-sales-title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.proj-form-date {
+    width: 100%;
+    height: 46px;
+    background-color: #182531;
+    border: 1px solid #384450;
+    border-radius: 8px;
+    color: #9AAABE;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.proj-form-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.proj-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proj-form-table thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.proj-form-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+}
+
+.proj-form-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5f6e82;
+
+}
+
+.proj-namevalue-container {
+    display: flex;
+    justify-content: center;
+}
+
+.proj-form-table tbody tr:nth-last-child(odd) {
+    background-color: #242c3b;
+}
+
+.proj-form-table tbody tr:hover > td{
+    background-color: #5f6e82;
+}
+
+.sumir576 {
+    display: none;
+}
+
+.sumir992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .sumir576 {
+        display: table-cell;
+    }
+
+    .proj-card {
+        padding: 35px;
+    }
+
+    .proj-form-table tbody tr {
+        height: 55px;
+    }
+
+    .proj-form-table tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sumir992 {
+        display: table-cell;
+    }
+}

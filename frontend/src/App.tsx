@@ -1,10 +1,18 @@
 import MessageButton from "./components/messageButton"
+import Header from "./components/header"
+import Card from "./components/card"
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <MessageButton/>
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="proj-container">
+            <Card/>
+          </div>
+        </section>
+      </main>
     </>
   )
 }
