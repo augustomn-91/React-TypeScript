@@ -1,0 +1,14 @@
+.proj-red-btn {
+    height: 45px;
+    width: 45px;
+    background: #ff6b72;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.proj-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
